@@ -1,0 +1,48 @@
+body{
+  font-family: 'Cabin Condensed', sans-serif;
+  background-color: #f0f0f0;
+}
+
+#people_list{
+  margin: 0 auto 10px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.list-title{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0 auto 15px;
+  text-align: center;
+}
+
+.person{
+  position: relative;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+}
+
+.person:hover{ background-color: #e2eeff; }
+
+.person-name{ font-weight: bold; font-size: 1.2em; }
+.person-info{ font-size: 0.9em; font-style: italic; }
+
+/* Wide VGA */
+@media screen and (min-width: 768px) {
+  .person{
+    width: 90%;
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
+
+/* HD */
+@media screen and (min-width: 1280px) {
+  .person{ width: 45%; display: inline-block; margin: 0 10px 10px 0; }
+}
+
+/* Full HD */
+@media screen and (min-width: 1920px) {
+  .person{ width: 45%; display: inline-block; margin: 0 10px 10px 0; }
+}
