@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="listPeople">
     <head>
+        <title> List of people </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="app.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        Hello World
+    <body ng-app="listPeople">
+        <div class="list-title"> People list </div>
+        <div id='people_list' ng-controller="peopleController">
+          <div class='person' ng-repeat="person in people">
+            <div class="person-name">{{ person.name }}</div>
+            <div class="person-info">{{ person.disclosableInfo }}</div>
+          </div>
+        </div>
     </body>
 </html>
